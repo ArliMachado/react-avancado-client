@@ -72,7 +72,7 @@ const Footer = () => (
         </nav>
       </S.Column>
 
-      <S.Column aria-aria-labelledby="footer-contact">
+      <S.Column aria-labelledby="footer-contact">
         <Heading color="black" lineColor="secondary" lineBottom size="small">
           Location
         </Heading>
