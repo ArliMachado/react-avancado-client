@@ -1,7 +1,7 @@
 export default {
   grid: {
     container: '130rem',
-    gutter: '3.2rem',
+    gutter: '3.2rem', // espaçamento entre as colunas no grid
   },
   border: {
     radius: '0.4rem',
