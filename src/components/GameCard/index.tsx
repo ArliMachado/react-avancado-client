@@ -5,7 +5,7 @@ import {
   AddShoppingCart,
 } from '@styled-icons/material-outlined';
 import Button from 'components/Button';
-import Ribbon from 'components/Ribbon';
+import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon';
 
 export type GameCardProps = {
   title: string;
