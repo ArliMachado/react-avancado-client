@@ -42,6 +42,22 @@ describe('<TextField />', () => {
     expect(screen.getByTestId('icon').parentElement).toHaveStyle({ order: 1 });
   });
 
+  it('Renders with error', () => {
+    const { container } = renderWithTheme(
+      <TextField
+        icon={<AccountCircle data-testid="icon" />}
+        error="Error message"
+        label="TextField"
+        labelFor="TextField"
+        id="TextField"
+      />,
+    );
+
+    expect(screen.getByText('Error message')).toBeInTheDocument();
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it('Does not changes its value when disabled', async () => {
     const onInput = jest.fn();
 

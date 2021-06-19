@@ -44,3 +44,20 @@ withIcon.args = {
   initialValue: '',
   placeholder: 'john.cage@gmail.com',
 };
+
+export const withError: Story<TextFieldProps> = args => (
+  <div style={{ maxWidth: 300, padding: 15 }}>
+    <TextField {...args} />
+  </div>
+);
+
+withError.args = {
+  label: 'E-mail',
+  icon: <AccountCircle />,
+  iconPosition: 'left',
+  labelFor: 'Email',
+  id: 'Email',
+  initialValue: '',
+  placeholder: 'john.cage@gmail.com',
+  error: 'Ops..something is wrong',
+};
